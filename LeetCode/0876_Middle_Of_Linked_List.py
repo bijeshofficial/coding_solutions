@@ -12,3 +12,12 @@ class Solution:
             cur_node = cur_node.next
             
         return (l[len(l)//2])
+
+#Fast and Slow Pointer Approach which 
+class Solution(object):
+    def middleNode(self, head):
+        slow = fast = head
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+        return slow
