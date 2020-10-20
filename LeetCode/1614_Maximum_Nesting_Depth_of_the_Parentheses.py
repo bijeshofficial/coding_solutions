@@ -10,3 +10,6 @@ class Solution:
                 counter -= 1
         ans.append(counter)
         return max(ans)
+
+
+# This actually got 99th percentile in terms of time complexity and 100th percentile in space complexity.
